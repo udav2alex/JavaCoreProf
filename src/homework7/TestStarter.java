@@ -32,7 +32,7 @@ public class TestStarter {
                     beforeMethod = method;
                 } else {
                     throw new RuntimeException("В тестовом классе должен быть " +
-                            "только один метод с аннотацией @BeforeSuite");
+                            "только один метод с аннотацией @BeforeSuite!");
                 }
             }
             if (method.isAnnotationPresent(AfterSuite.class)) {
@@ -40,7 +40,7 @@ public class TestStarter {
                     afterMethod = method;
                 } else {
                     throw new RuntimeException("В тестовом классе должен быть " +
-                            "только один метод с аннотацией @AfterSuite");
+                            "только один метод с аннотацией @AfterSuite!");
                 }
             }
         }
